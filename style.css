@@ -1,0 +1,533 @@
+@import 'reset.css';
+@import 'basic.css';
+
+
+/* ==================================== */
+
+.header {
+    /* background-image: linear-gradient(90deg, #42d035, #9abd0d, #ea0d09); */
+    background-color: black;
+    border-bottom: 2px solid black;
+    color: white;
+}
+
+
+.header__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 10px 10px;
+    gap: 15px;
+    height: 100%;
+}
+
+
+.nav__text {
+    font-family: "Montserrat Alternates", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.nav__link {
+    transition: 0.5s;
+}
+
+.nav__link:hover {
+    color: rgb(153, 255, 0);
+}
+
+
+/* ====================================== */
+
+.main {
+    --swiper-pagination-color: rgb(153, 255, 0);
+}
+
+.about {
+    position: relative;
+    background: linear-gradient(rgb(21 21 21 / 80%), rgb(27 23 23 / 50%)), url(img/gzbTilda.jpg) no-repeat;
+    background-position: 25% 55%;
+    background-size: cover;
+    background-color: white;
+    width: 100%;
+    height: 860px;
+    border-bottom: 1px black solid;
+}
+
+.about__wrapper {}
+
+.socials {
+    font-family: "Montserrat Alternates", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    padding-top: 5px;
+}
+
+.socials__icon {
+    max-width: 30px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+
+.logo img {
+    width: 100%;
+    max-width: 150px;
+    height: 150px;
+    background: rgb(255, 255, 255);
+    border: 5px solid black;
+    border-left: none;
+    border-top: none;
+}
+
+.about__text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgba(208, 197, 197, 0.592);
+    font-family: "Montserrat Alternates", sans-serif;
+    font-size: 24px;
+    padding-top: 200px;
+}
+
+.about__text-link {
+    display: block;
+}
+
+.about__text-link:hover,
+.link__slogan:hover {
+    color: rgb(153, 255, 0);
+    transition: 0.5s;
+}
+
+.link__slogan {
+    font-size: 10px;
+    display: block;
+}
+
+/* .link__slogan:hover {
+    color:rgb(153, 255, 0);
+    transition: 0.5s;
+} */
+
+.about__text-link-slogan {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3px;
+}
+
+
+/* =================================== */
+
+
+.gallery {
+    position: relative;
+    background: url(img/gaztreetboys.svg) no-repeat;
+    background-size: cover;
+    background-color: white;
+    width: 100%;
+    min-height: 600px;
+}
+
+.gallery__decor-left {
+    width: 700px;
+    position: absolute;
+    left: 49px;
+    top: 52px;
+    transform: rotate(310deg);
+}
+
+.gallery__decor-bottom-left {
+    width: 700px;
+    position: absolute;
+    left: 49px;
+    bottom: -283px;
+    transform: rotate(310deg);
+}
+
+.gallery__decor-right {
+    width: 700px;
+    position: absolute;
+    right: 49px;
+    top: 52px;
+    transform: rotate(310deg);
+}
+
+.gallery__wrapper {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    justify-items: center;
+    padding-top: 180px;
+    padding-bottom: 30px;
+}
+
+
+.gallery__item {
+    min-width: 365px;
+    height: 460px;
+    transition: all .5s;
+    border-radius: 8px;
+    border: 2px solid black;
+}
+
+.gallery__item:hover {
+    transform: scale(1.1);
+}
+
+.gallery__item:nth-child(1) {
+    grid-column-start: 2;
+    grid-column-end: 4;
+}
+
+.gallery__item:nth-child(2) {
+    grid-column-start: 1;
+}
+
+.gallery__item:nth-child(3) {
+    grid-column-start: 5;
+}
+
+.gallery__logo-wrapper {
+    position: absolute;
+    max-width: 350px;
+    padding: 20px;
+    background: white;
+    bottom: 130px;
+    border-radius: 50%;
+    border: 2px solid black;
+}
+
+.gallery__logo {
+    /* background: rgb(236, 48, 161); */
+    max-width: 230px;
+}
+
+
+
+.gallery__logo-wrapper:hover {
+    background-color: rgb(153, 255, 0);
+    border-radius: 50%;
+    transition: 0.5s;
+}
+
+
+
+/* =================================== */
+
+
+.promo {
+    /* padding-bottom: 80px; */
+    background-size: cover;
+    background-color: white;
+    height: 100%;
+    /* border-top: 2px solid black; */
+    /* border-bottom: 2px solid black; */
+}
+
+.promo__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 50px;
+    gap: 50px;
+}
+
+.promo__title {
+    font-family: "Montserrat Alternates", sans-serif;
+    font-size: 34px;
+    font-weight: 500;
+    text-align: center;
+    background-color: white;
+    border-radius: 20px;
+    /* border: 2px solid black; */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+    margin-top: 125px;
+    margin-bottom: 125px;
+}
+
+.promo__title:hover {
+    color: rgb(153, 255, 0);
+    transition: 0.5s;
+}
+
+
+.title__star {
+    max-width: 40px;
+}
+
+.promo__video {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    background-color: black;
+    background: url(img/background_section-2.svg) no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+}
+
+.promo__video-1 {
+    width: 590px;
+
+    /* max-height: 515px; */
+    /* border-radius: 10px; */
+    /* border: 2px solid black; */
+}
+
+/* ================================ */
+
+.market {
+    padding-bottom: 25px;
+    /* background: url(img/background_section-2.svg) no-repeat; */
+    background-size: cover;
+    background-color: white;
+}
+
+.market__slider {
+    width: 100%;
+    height: 100%;
+}
+
+.market__slider-wrapper {
+    padding-top: 120px;
+    padding-bottom: 50px;
+    height: 100%;
+}
+
+.market__slide .swiper-slide {
+    max-width: 354px;
+    height: 400px;
+    border-radius: 10px;
+}
+
+.market__slide .swiper-slide {
+    width: auto;
+}
+
+.slide__img {
+    width: 100%;
+    height: 400px;
+    border-radius: 8px 8px 0px 0px;
+    /* box-shadow: 9px -2px 10px 14px rgba(0, 0, 0, 0.2); */
+}
+
+
+
+.slide__description {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    padding: 15px;
+    text-align: center;
+    font-family: "Montserrat Alternates", sans-serif;
+    background: black;
+    color: white;
+    height: auto;
+    width: 100%;
+    border-radius: 0 0 8px 8px;
+}
+
+.slide__description:hover {
+    color: rgb(153, 255, 0);
+}
+
+.slider__pagination .swiper-pagination {}
+
+.slider-prev {}
+
+.slider-next {}
+
+.slider__scrollbar {
+    margin-top: 100px;
+}
+
+/* ================================= */
+
+
+.news {
+    margin-top: 80px;
+    margin-bottom: 40px;
+}
+
+.news__title {
+    display: flex;
+    padding-bottom: 120px;
+    justify-content: center;
+    align-items: center;
+}
+
+.news__title-text {
+    font-family: "Montserrat Alternates", sans-serif;
+    font-size: 34px;
+    font-weight: 500;
+}
+
+.news__title-text:hover {
+    color: rgb(153, 255, 0);
+    transition: 0.5s;
+}
+
+
+.news__wrapper {
+    height: 500px;
+    width: 100%;
+    overflow: scroll;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    justify-items: center;
+    align-content: space-between;
+    gap: 40px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.news__item {
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    gap: 25px;
+    width: 100%;
+    height: 300px;
+    /* border: 1px solid rgba(0, 0, 0); */
+    border-radius: 10px 10px 0 0;
+    background: linear-gradient(rgb(0, 3, 0), rgba(16, 10, 10, 0.721));
+    color: white;
+    box-shadow: 8px -10px 10px 14px rgb(0, 3, 0);
+}
+
+.news__star {
+    max-width: 50px;
+}
+
+.news__item-img {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 50%;
+    max-height: 300px;
+}
+
+.news__item-text {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    font-family: "Montserrat Alternates", sans-serif;
+    font-size: 18px;
+    padding: 10px;
+
+}
+
+.news__item-link {
+    color: rgb(238, 6, 126);
+    max-width: 35%;
+    text-align: start;
+}
+
+.news__item-link:hover {
+    color: rgb(153, 255, 0);
+}
+
+/* ================================= */
+
+
+.telegram {
+    background: linear-gradient(rgb(21 21 21 / 80%), rgb(27 23 23 / 50%)), url(img/telegram-back.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 700px;
+}
+
+.telegram__wrapper {
+    display: flex;
+    align-items: start;
+    flex-direction: row;
+    padding-top: 150px;
+    padding-left: 30px;
+    gap: 50px;
+}
+
+.telegram__qr {
+    max-width: 300px;
+    border-radius: 20px;
+}
+
+.telegram__text {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.telegram__text-title {
+    font-family: "Montserrat Alternates", sans-serif;
+    font-weight: 400;
+    font-size: 28px;
+    color: white;
+    padding-top: 50px;
+}
+
+.telegram__text-main {
+    font-family: "Montserrat Alternates", sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    color: white;
+}
+
+.footer__socials {
+    font-family: "Montserrat Alternates", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    
+}
+
+.footer__socials-nav {
+    margin-top: 165px;
+}
+
+/* ============================== */
+
+.footer {
+    background-color: black;
+    border-bottom: 2px solid black;
+    color: white;
+}
+
+.footer__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 10px 10px;
+    gap: 15px;
+    height: 100%;
+}
+
