@@ -774,6 +774,10 @@ body .body--opened-menu {
         overflow-x: hidden;
     }
 
+    .gallery__slider-item img {
+        height: 425px
+    }
+
 }
 
 @media (max-width: 415px) {
