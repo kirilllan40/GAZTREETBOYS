@@ -665,6 +665,10 @@ body .body--opened-menu {
 @media (max-width: 1125px) {
     .gallery__wrapper {}
 
+    .market__slider {
+        width: 93%;
+    }
+
 }
 
 
@@ -693,6 +697,9 @@ body .body--opened-menu {
     .news__item-img {
         padding-left: 0;
     }
+    .market__slider {
+        width: 93%;
+    }
 
 
 }
@@ -713,6 +720,11 @@ body .body--opened-menu {
     .telegram__text {
         text-align: center;
     }
+
+    .market__slider {
+        width: 93%;
+    }
+
 }
 
 
@@ -780,9 +792,19 @@ body .body--opened-menu {
     }
 
     .gallery__slider-item img {
-        height: 425px
+        height: 425px;
     }
+/* 
+    .market__slide {
+        max-width: 385px;
+    } */
 
+}
+
+@media (max-width: 500px) {
+    .market__slider {
+        width: 93%;
+    }
 }
 
 @media (max-width: 415px) {
