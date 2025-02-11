@@ -47,8 +47,8 @@ const swiper = new Swiper('.market__slider', {
 
     loop: true,
     speed: 400,
-    autoHeight: 'true',
-    slidesPerView: 'auto',
+    autoHeight: true,
+    slidesPerView: 1,
     spaceBetween: 40,
     grabCursor: true,
 
@@ -73,12 +73,12 @@ const swiper = new Swiper('.market__slider', {
 
     breakpoints: {
 
-        620: {
+        500: {
             slidesPerView: 2,
-            spaceBetween: 32
+            spaceBetween: 15,
         },
         820: {
-            slidesPerView: 2,
+            slidesPerView: 3,
             spaceBetween: 32,
         },
         1150: {
@@ -90,7 +90,6 @@ const swiper = new Swiper('.market__slider', {
     }
 
 });
-
 // modal -------------------------------------------
 
 const modal = document.querySelector('.modal')
