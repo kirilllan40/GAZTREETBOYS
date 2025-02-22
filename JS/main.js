@@ -92,24 +92,20 @@ const swiper = new Swiper('.market__slider', {
 });
 // modal -------------------------------------------
 
-const modal = document.querySelector('.modal')
+const modal = document.querySelector('.modal');
 const modalButton = document.querySelectorAll('.slide__description');
 
-
-modalButton.forEach(b=>b.addEventListener('click', openModal));
-modal.addEventListener('click', closeModal)
-
+modalButton.forEach(b => b.addEventListener('click', openModal));
+modal.addEventListener('click', closeModal);
 
 function openModal(e) {
-    e.preventDefault()
-    document.body.classList.toggle('body--modal-opened')
+    document.body.classList.toggle('body--modal-opened');
 }
 
 function closeModal(e) {
-    e.preventDefault()
-    const target = e.target
-
-    if (target.closest('.modal__closed-btn') || target.classList.contains('modal')) {
+    const target = e.target;
+    if (target.classList.contains('modal') || target.closest('.modal__closed-btn')) {
+        e.preventDefault();
         document.body.classList.remove('body--modal-opened');
     }
 }
